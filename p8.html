@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Your Name | Code 2 Portfolio</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- navigation menu -->
+    <div class="nav">
+      <h1>Shuyu Xu</h1>
+      <ul>
+        <li>Project <a href="p1.html">#1 Lost & Found</a></li>
+        <li>Project <a href="p2.html">#2 Face Generator</a></li>
+        <li>Project <a href="p3.html">#3 Experimental Clock</a></li>
+        <li>Project <a href="p4.html">#4 Exquisite Corpse </a></li>
+        <li>Project <a href="p5.html">#5 Optical Illusion</a></li>
+        <li>Project <a href="p6.html">#6 Data Portrait</a></li>
+        <li>Project <a href="p7.html">#7 Autobiograpghical Game</a></li>
+        <li>Project <a href="p8.html">#8 Experimental Camera</a></li>
+        <li>Project <a href="p9.html">#9 Consentful Interface</a></li>
+        <li>Project <a href="p10.html">#10 Sousveillance Tool</a></li>
+      </ul>
+    </div>
+
+    <!-- main content -->
+    <div class="content">
+<h1>
+        Project #8 Experimental Camera --  Sichuan Opera Changing Faces
+      </h1>
+
+      <!-- 2. embed your p5 sketch -->
+
+      <div class="fullwidth">
+        <!-- below width and height refers to the dimensions of your sketch-->
+
+        <iframe width = "600px" height = "400px" allow = "camera"src="https://editor.p5js.org/shuyuxu0896/full/bmpSjG9qF"></iframe>
+        
+        <p>
+          Open mouth to different sizes to change the faces
+        </p>
+      </div>
+
+      </p>
+        Click <a href = "https://editor.p5js.org/shuyuxu0896/sketches/bmpSjG9qF" target = "_blank">Here</a> to open source code
+    
+     
+    <h1>
+        Description
+      </h1>
+      <p>
+        Name: Shuyu Xu
+      </p>
+                    </br>
+      <p>
+       Work Description: 
+    </p>
+    <p>
+      A camera is like a mirror which reflects the people who are looking at it inside the mirror, virtual world. Hence, the experimental camera assignment, the camera and the screen show various possibilities about how we can be in the virtual world. Like cosplay, we can become everyone in the camera.
+    </p>
+
+   <h1>
+      Design Process
+    </h1>
+    <p>
+      I drew three sketches about how we can change our face in the camera.
+    </p>
+   <p>
+     The first one is the fox mask. The camera's filter is like the mask we wear in Halloween to camouflage our real identities. 
+  </p>
+  
+      <img
+         src = "https://cdn.glitch.me/53d892d5-b367-4428-8686-8bc6f24e4eec%2F1.jpg?v=1636842931519"
+         />
+   </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  <p>
+    The psudocode is here.</br>
+
+	  let x0 = random(capture.width);</br>
+	  let y0 = random(capture.height);</br>
+	  let a = random(4, 10);</br>
+	  let r = random(0, 360);</br>
+	  
+	  let c = capture.get(x0, y0);</br>
+	  
+	  noStroke();</br>
+	  fill(c);</br>
+	  rotate(r);</br>
+	  triangle(x0-a/2, y0-a/2, x0+a, y0, x0, y0+a);</br>
+	
+    Track the position of face</br>
+    Track the position of eyes </br>
+    Track the position of mouth</br>
+    Calculate the size of face, eyes and mouth</br>
+    Change the size of the images according to the sizes of eyes, face, and mouth</br>
+
+  </p>
+<p>
+  The second sketch is to draw a smile on the mask.
+</p>
+    <img
+         src = "https://cdn.glitch.me/53d892d5-b367-4428-8686-8bc6f24e4eec%2F2.jpg?v=1636842931607"
+         />
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  <p>
+    The psudocode is here.</br>
+
+	  let x0 = random(capture.width);</br>
+	  let y0 = random(capture.height);</br>
+	  let a = random(4, 10);</br>
+	  let r = random(0, 360);</br>
+	  
+	  let c = capture.get(x0, y0);</br>
+	  
+	  noStroke();</br>
+	  fill(c);</br>
+	  rotate(r);</br>
+	  triangle(x0-a/2, y0-a/2, x0+a, y0, x0, y0+a);</br>
+
+    Track the position of eyes </br>
+    Eyes position x + mouth distance = mouth position x</br>
+    Eyes position y + mouth distance = mouth position y</br>
+    Change the size of the images according to the sizes of eyes, face, and mouth</br>
+
+  </p>
+<p>
+    The third one is according to the Sichuan Opera changing faces. In the performance, the actors will change different opera masks when their head moving.
+    </p>
+
+<p>
+  In order to see the overlapped data, I changed the opacity of every rectangle and make them rotate around the center in different speeds. The later data will rotate more quickly. When the mouse hovers on the canvas, you will see the data rotating.
+</p>
+    <img
+         src = "https://cdn.glitch.me/53d892d5-b367-4428-8686-8bc6f24e4eec%2F3.1.jpg?v=1636842931457"
+         />
+    <img
+         src = "https://cdn.glitch.me/53d892d5-b367-4428-8686-8bc6f24e4eec%2F3.3.jpg?v=1636842931590"
+         />
+    <img
+         src = "https://cdn.glitch.me/53d892d5-b367-4428-8686-8bc6f24e4eec%2F3.2.jpg?v=1636842931443"
+         />
+ </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+ </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+ </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+ </br>
+ </br>
+
+<p>
+    The psudocode is here.</br>
+
+	  let x0 = random(capture.width);</br>
+	  let y0 = random(capture.height);</br>
+	  let a = random(4, 10);</br>
+	  let r = random(0, 360);</br>
+	  
+	  let c = capture.get(x0, y0);</br>
+	  
+	  noStroke();</br>
+	  fill(c);</br>
+	  rotate(r);</br>
+	  triangle(x0-a/2, y0-a/2, x0+a, y0, x0, y0+a);</br>
+
+    Calculate how large the mouth is open</br>
+    When the distance of upperlip and lowerlip is less than 5</br>
+    The face is No.1</br>
+    When the distance of upperlip and lowerlip is less than 10 and larger than 5</br>
+    The face is No.2</br>
+    In other situations, the face is No.3</br>
+    Track the position of eyes </br>
+    </p>
+
+<p>
+  I choose the third idea and here are the three face detectation images.
+</p>
+    <img
+         src = "https://cdn.glitch.me/53d892d5-b367-4428-8686-8bc6f24e4eec%2F1.png?v=1636845184891"
+         />
+    <img
+         src = "https://cdn.glitch.me/53d892d5-b367-4428-8686-8bc6f24e4eec%2F2.png?v=1636845184262"
+         />
+    <img
+         src = "https://cdn.glitch.me/53d892d5-b367-4428-8686-8bc6f24e4eec%2F3.png?v=1636845184341"
+         />
+
+ </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+ </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+ </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+ </br>
+ </br>
+<h1>
+  Reflection
+</h1>
+<p>
+  In this assignment, the topic about camera reminds me of the identity in the virtual world. The camera is a mirror which can recreate our avators. The term metaverse is very trendy these days. The camera and the digital interface are the most suitable media for people to interact with virtual world actively. 
+</p>
+<p>
+  Besides, how the camera detect people is a blurred method to catagorize everything. Sometimes in the clmtrkr, it will not detect my face due to my face's direction to the camera or my glasses. There are infinite cases where people can not take them into consider, even technology. So, it is neccessary to improve the quality of technology through finding out the bugs and issues inside them.
+</p>
+<p>
+  For the pixels array, it provides me with a new perspective to see how to describe a digital picture. And the method to make some mosaics make me understand the filters in the picture post proccess apps. They change the pixels in some rules or functions to improve the quality of pictures, which might look like to write shader in game engine. They both change the parameters in of the elements.
+</p>
+
+<h1>
+        Credits
+      </h1>
+      
+      <p>
+        This project was created based on the <a href="https://www.youtube.com/watch?v=g6MPsUfDw04&ab_channel=KatherineMoriwaki">p5.js tutorial</a> by Katherine Moriwaki.
+      </p>
+    </div>
+  </body>
+</html>
